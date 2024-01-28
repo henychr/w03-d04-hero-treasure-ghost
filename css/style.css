@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 800px;
+    height: 600px;
+    background: transparent url('../img/tiles.jpg') left top/400px 400px repeat scroll;
+    position: relative;
+}
+
+.hero,
+.ghost,
+.treasure {
+    position: absolute;
+    width:100px;
+    height: 100px;
+    background: transparent center/contain no-repeat scroll;
+}
+
+.hero {
+    background-image: url('../img/hero.png');
+}
+
+.ghost {
+    background-image: url('../img/ghost.png');
+}
+
+.treasure {
+    background-image: url('../img/treasure.png');
+}
+
+#btn-start {
+    background-color: lightgreen;
+    margin: 10px 0px;
+    display:initial;
+}
